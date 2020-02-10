@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="1425.0" spacing="80.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConsistOfItemController">
+    <children>
+        <StackPane prefHeight="150.0" prefWidth="200.0">
+            <children>
+                <Pane fx:id="stackEdit" prefHeight="200.0" prefWidth="1230.0">
+                    <children>
+                        <HBox fx:id="itemC1" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#methodToMouseEntered" onMouseExited="#methodToMouseExited" prefHeight="53.0" prefWidth="1425.0" spacing="80.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;">
+                            <children>
+                                <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ChoiceBox fx:id="boxItemProgramID" prefWidth="150.0" />
+                                <ChoiceBox fx:id="boxItemExerciseName" prefWidth="150.0" />
+                                <Button fx:id="btnSave" mnemonicParsing="false" onAction="#handleClicks" onMouseEntered="#methodToMouseEnteredSaveButton" onMouseExited="#methodToMouseExitedSaveButton" prefHeight="26.0" prefWidth="67.0" style="-fx-border-radius: 20; -fx-background-color: #008000;" stylesheets="@../style.css" text="save" textFill="WHITE" />
+                                <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#handleClicks" onMouseEntered="#methodToMouseEnteredCancelButton" onMouseExited="#methodToMouseExitedCancelButton" prefHeight="27.0" prefWidth="66.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: red;" stylesheets="@../style.css" text="cancel">
+                                    <HBox.margin>
+                                        <Insets right="20.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <effect>
+                                <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+                            </effect>
+                        </HBox>
+                    </children>
+                </Pane>
+                <Pane fx:id="stackNormal" prefHeight="200.0" prefWidth="1230.0">
+                    <children>
+                        <HBox fx:id="itemC2" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#methodToMouseEntered" onMouseExited="#methodToMouseExited" prefHeight="53.0" prefWidth="1425.0" spacing="80.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;">
+                            <children>
+                                <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+
+                                <Label fx:id="FieldProgramIDLabel" prefHeight="26.0" prefWidth="170.0" textFill="WHITE" />
+                                <Label fx:id="FieldExerciseNameLabel" prefHeight="26.0" prefWidth="186.0" textFill="WHITE" />
+                                <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#handleClicks" onMouseEntered="#methodToMouseEnteredEditButton" onMouseExited="#methodToMouseExitedEditButton" prefHeight="26.0" prefWidth="67.0" style="-fx-border-radius: 20; -fx-background-color: #008000;" stylesheets="@../style.css" text="edit" textFill="WHITE">
+                                    <HBox.margin>
+                                        <Insets right="20.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#handleClicks" onMouseEntered="#methodToMouseEnteredDeleteButton" onMouseExited="#methodToMouseExitedDeleteButton" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: red;" stylesheets="@../style.css" text="delete">
+                                    <HBox.margin>
+                                        <Insets right="20.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <effect>
+                                <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+                            </effect>
+                        </HBox>
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+</HBox>

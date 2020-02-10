@@ -1,0 +1,56 @@
+.button
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #ffffff;
+}
+.button:hover{
+-fx-background-color : #10165F;
+}
+.button:pressed
+{
+-fx-background-color : #1620A1;
+}
+
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: #2B2B2B;
+}
+
+.anchor-pane {
+    -fx-background-color: #F2F2F2;
+}
+
+@font-face {
+    font-family: Poprock ;
+    src: url('./Font/Poprock.ttf');
+}
+
+#LabelTitle{
+    -fx-font-family: 'Poprock';
+    -fx-font-size: 48;
+}
